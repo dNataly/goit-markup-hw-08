@@ -1,0 +1,33 @@
+.clients-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item-wrapper {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon);
+  border-radius: 5px;
+  transition: var(--animation);
+  
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+
+.clients-item-icon {
+  fill: var(--icon);
+  transition: fill var(--animation);
+
+    .clients-item-wrapper:hover &,
+    .clients-item-wrapper:focus & {
+      fill: var(--accent-color);
+    }
+}
+

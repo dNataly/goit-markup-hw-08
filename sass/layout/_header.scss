@@ -1,0 +1,154 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.section-padding {
+  &:not(:nth-child(3)) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-padding {
+  &:nth-child(3) {
+    padding-bottom: 94px;
+  }
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-weight: var(--heading-weight);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logotype);
+
+  .header & {
+    margin-right: 93px;
+  }
+}
+
+.logotype-accent,
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.contact a:hover,
+.contact a:focus,
+.navigation-list-link.current {
+  color: var(--accent-color);
+  transition: color var(--animation);
+}
+
+.current {
+    &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: var(--animation);
+  }
+}
+
+.navigation-list,
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+
+.navigation-list-link {
+  color: var(--heading);
+  position: relative;
+  padding-bottom: 28px;
+}
+
+.contact {
+  margin-left: auto;
+
+  & a {
+    color: var(--main-text);
+  }
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-phone-icon {
+  width: 10px;
+  height: 16px;
+  vertical-align: text-top;
+  fill: var(--main-text);
+  margin-right: 10px;
+
+  
+  .contact-phone:hover &,
+  .contact-phone:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.contact-mail-icon {
+  width: 16px;
+  height: 12px;
+  vertical-align: middle;
+  fill: var(--main-text);
+  margin-right: 10px;
+
+  .contact-mail:hover &,
+  .contact-mail:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+

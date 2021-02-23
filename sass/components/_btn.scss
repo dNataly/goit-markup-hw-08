@@ -1,0 +1,65 @@
+.button {
+  font-family: inherit;
+  font-weight: var(--heading-weight);
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--secondary-accent);
+  background-color: var(--accent-color);
+  transition: background-color var(--animation);
+
+    &:hover,
+    &:focus{
+      cursor: pointer;
+      background-color: var(--hero-button-hover);
+  }
+}
+
+ .hero-button {
+  align-items: center;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+}
+
+.portfolio-button-list {
+  display: flex;
+  width: 624px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+}
+
+.button-list-item {
+  &:not(:last-child) {
+  margin-right: 8px;
+  }
+}
+
+.portfolio-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 6px 22px;
+
+  color: var(--heading);
+  background-color: var(--secondary-bg);
+  cursor: pointer;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {   
+    background-color: var(--accent-color);
+    color: var(--secondary-accent);
+  }
+}
