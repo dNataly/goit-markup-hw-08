@@ -25,9 +25,11 @@
   min-width: 136px;
 }
 
+
 .portfolio-button-list {
   display: flex;
-  width: 624px;
+  flex-wrap: wrap;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 34px;
@@ -36,6 +38,10 @@
 .button-list-item {
   &:not(:last-child) {
   margin-right: 8px;
+  }
+
+  &:nth-last-child(-n+2) {
+    margin-top: 15px;
   }
 }
 
@@ -62,4 +68,16 @@
     background-color: var(--accent-color);
     color: var(--secondary-accent);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button-list {
+    width: 624px;
+  }
+
+  .button-list-item {
+  &:nth-last-child(-n+2) {
+    margin-top: 0;
+  }
+}
 }

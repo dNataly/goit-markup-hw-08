@@ -1,6 +1,6 @@
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 32px 30px;
 
     &-link {
@@ -20,6 +20,10 @@
     }
 }
 
+.team-container .social-list-item {
+  margin-bottom: 24px;
+}
+
 .social-list-icon {
   width: 20px;
   height: 20px;
@@ -29,5 +33,11 @@
   .social-list-link:hover &,
   .social-list-link:focus & {
   fill: var(--secondary-accent);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    justify-content: space-between;
   }
 }

@@ -1,6 +1,8 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/common";
 @import "./base/container";
+
 
 //components
 @import "./components/btn";
@@ -16,5 +18,3 @@
 @import "./layout/footer";
 @import "./layout/modal";
 @import "./layout/modal-form";
-
-
