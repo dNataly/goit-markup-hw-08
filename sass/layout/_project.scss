@@ -79,6 +79,12 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-main-section.section-padding {
+    padding-top: 120px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-list {
     display: flex;

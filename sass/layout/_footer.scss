@@ -54,7 +54,7 @@
 }
 
 .footer-social {
-  margin: 60px 0;
+  margin: 60px 0px;
 }
 
 .footer-social-list {
@@ -141,6 +141,10 @@
   .footer-subscribe {
     width: 70%;
   }
+
+  .footer-social {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -156,5 +160,8 @@
   }
   .subscribe-button {
     margin-top: 0;
+  }
+  .footer-social {
+    margin: 0;
   }
 }

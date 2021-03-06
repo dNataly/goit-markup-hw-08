@@ -17,14 +17,14 @@ header {
 
 .section-padding {
   &:not(:nth-child(3)) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 .section-padding {
   &:nth-child(3) {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
   }
 }
 
@@ -112,7 +112,6 @@ header {
 .mobile-menu {
     position: absolute;
     width: 100%;
-    // max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -150,20 +149,20 @@ header {
     color: var(--heading);
     position: relative;
 
-    &.current-mobile {
-      &::after {
-        content: "";
-        position: absolute;
-        padding-left: 45px;
-        // bottom: 0;
-        width: 100%;
-        height: 4px;
-        display: block;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-        transition: var(--animation);
-      }
-    }
+    // &.current-mobile {
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     padding-left: 45px;
+    //     // bottom: 0;
+    //     width: 100%;
+    //     height: 4px;
+    //     display: block;
+    //     background-color: var(--accent-color);
+    //     border-radius: 2px;
+    //     transition: var(--animation);
+    //   }
+    // }
   }
 
   .mobile-social-list {
@@ -294,6 +293,18 @@ header {
 
 
 @media screen and (min-width: 1200px) {
+  .section-padding {
+  &:not(:nth-child(3)) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-padding {
+  &:nth-child(3) {
+    padding-bottom: 94px;
+  }
+}
   .contact {
     flex-direction: row;
   }
